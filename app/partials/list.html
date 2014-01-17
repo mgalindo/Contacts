@@ -1,1 +1,24 @@
-<!--Contact List Navbar--><header><div class="navbar"><div class="navbar-inner"><label class="brand">Contact List</label><div class="btn-group pull-right navbar-buttons"><a type="button" id="btnAdd" href="/edit" class="btn"><i class="icon-plus"></i></a></div></div></div></header><!--Contact List--><div class="contact-list"><ul class="nav nav-tabs nav-stacked"><li id="contact_id" ng-repeat="contact in contacts | orderBy:'last'"><a ng-click="edit(contact.id)"><ul><li id="name_id" class="contact-name">{{contact.last}}, {{contact.first}}</li><li id="email_id" class="contact-email">{{contact.email}}</li></ul></a></li></ul></div>
+<header>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <label class="brand">Contact List</label>
+            <div class="btn-group pull-right navbar-buttons">
+                <a type="button" id="btnAdd" href="/edit" class="btn">
+                    <i class="icon-plus"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="contact-list">
+    <ul class="nav nav-tabs nav-stacked">
+        <li id="contact_id" ng-repeat="contact in contacts | orderBy:'last'">
+            <a ng-click="edit(contact.id)">
+                <ul>
+                    <li id="name_id" class="contact-name">{{contact.last}}, {{contact.first}}</li>
+                    <li id="email_id" class="contact-email">{{contact.email}}</li>
+                </ul>
+            </a>
+        </li>
+    </ul>
+</div>

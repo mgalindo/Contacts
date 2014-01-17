@@ -1,1 +1,24 @@
-<form id="frmEdit" name="EditForm" novalidate=""><!--Add or Edit Contact Navbar--><header class="the_nav"><div class="navbar"><div class="navbar-inner"><label class="brand">Add or Edit Contact</label><div class="btn-group pull-right"><a type="button" id="btnIconDelete" href="/" ng-click="delete()" class="btn"><i class="icon-trash"></i></a><a type="button" id="btnIconCancel" href="/" class="btn"><i class="icon-remove"></i></a></div></div></div></header><!--Add or Edit Contact Form--><div class="edit-contact"><!--Labels and input fields.--><label>First Name:</label><input id="txtFfirstname" type="text" placeholder="New First Name" ng-model="contact.first" ng-required="true"/><label>Last Name:</label><input id="txtLlastname" type="text" placeholder="New Last Name" ng-model="contact.last" ng-required="true"/><label>Email Address:</label><input id="txtEemailaddress" type="email" placeholder="New Email Address" ng-model="contact.email"/><!--Cancel and Save buttons when editing.--><div><a href="/"><button type="button" id="btnSave" ng-click="save()" ng-disabled="!EditForm.$valid" class="btn btn-success">Save</button></a><a href="/"><button type="cancel" id="btnCancel" class="btn btn-danger">Cancel</button></a></div></div></form>
+<form id="frmEdit" name="EditForm" novalidate="">
+    <header class="the_nav">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <label class="brand">Add or Edit Contact</label>
+                <div class="btn-group pull-right"><a type="button" id="btnIconDelete" href="/" ng-click="delete()" class="btn"><i class="icon-trash"></i></a><a type="button" id="btnIconCancel" href="/" class="btn"><i class="icon-remove"></i></a></div>
+            </div>
+        </div>
+    </header>
+    <div class="edit-contact">
+        <!--Labels and input fields.-->
+        <label>First Name:</label>
+        <input id="txtFfirstname" type="text" placeholder="New First Name" ng-model="contact.first" ng-required="true"/>
+
+        <label>Last Name:</label>
+        <input id="txtLlastname" type="text" placeholder="New Last Name" ng-model="contact.last" ng-required="true"/>
+
+        <label>Email Address:</label>
+        <input id="txtEemailaddress" type="email" placeholder="New Email Address" ng-model="contact.email"/>
+
+        <!--Cancel and Save buttons when editing.-->
+        <div><a href="/"><button type="button" id="btnSave" ng-click="save()" ng-disabled="!EditForm.$valid" class="btn btn-success">Save</button></a><a href="/"><button type="cancel" id="btnCancel" class="btn btn-danger">Cancel</button></a></div>
+    </div>
+</form>
