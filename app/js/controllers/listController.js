@@ -8,7 +8,7 @@ controllersModule.controller('ListController', ['$scope', '$rootScope', '$locati
         $scope.edit = function (id) {
             for (var i = 0, n = $scope.contacts.length; i < n; ++i) {
                 if (ContactService.contacts[i].id == id) {
-                    $location.path('/edit' + ContactService.contacts.indexOf(ContactService.contacts[i]));
+                    $location.path('/edit/' + ContactService.contacts.indexOf(ContactService.contacts[i]));
                     break;
                 }
             }

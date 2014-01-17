@@ -18,14 +18,16 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
                 templateUrl: 'partials/list.html',
                 controller: 'ListController'
             })
-
-            .when('/edit:id', {
+            .when('/edit', {
+                templateUrl: 'partials/edit.html',
+                controller: 'EditController'
+            })
+            .when('/edit/:id', {
                 templateUrl: 'partials/edit.html',
                 controller: 'EditController'
             })
             ;
 
-        $locationProvider.html5Mode(true);
 }]).run(function ($rootScope, ContactService) {
         ContactService.retrieveAll();
     });
