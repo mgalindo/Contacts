@@ -3,7 +3,14 @@
         <div class="navbar">
             <div class="navbar-inner">
                 <label class="brand">Add or Edit Contact</label>
-                <div class="btn-group pull-right"><a type="button" id="btnIconDelete" href="/" ng-click="delete()" class="btn"><i class="icon-trash"></i></a><a type="button" id="btnIconCancel" href="/" class="btn"><i class="icon-remove"></i></a></div>
+                <div class="btn-group pull-right">
+                    <a type="button" id="btnIconDelete" href="#/" ng-click="delete()" class="btn">
+                        <i class="icon-trash"></i>
+                    </a>
+                    <a type="button" id="btnIconCancel" href="#/" class="btn">
+                        <i class="icon-remove"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -19,6 +26,14 @@
         <input id="txtEemailaddress" type="email" placeholder="New Email Address" ng-model="contact.email"/>
 
         <!--Cancel and Save buttons when editing.-->
-        <div><a href="/"><button type="button" id="btnSave" ng-click="save()" ng-disabled="!EditForm.$valid" class="btn btn-success">Save</button></a><a href="/"><button type="cancel" id="btnCancel" class="btn btn-danger">Cancel</button></a></div>
+        <div>
+            <a href="#/">
+                <button type="button" id="btnSave" ng-click="save()" ng-disabled="!EditForm.$valid" class="btn btn-success">Save
+                </button>
+            </a>
+            <a href="#/">
+                <button type="cancel" id="btnCancel" class="btn btn-danger">Cancel
+                </button>
+            </a></div>
     </div>
 </form>
