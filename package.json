@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A starter project for AngularJS",
   "main": "scripts/web-server.js",
-  "repository": "https://github.com/mgalindo/Contacts.git,
+  "repository": "https://github.com/mgalindo/Contacts.git",
     "scripts": {
         "start": "node scripts/web-server"
     },
