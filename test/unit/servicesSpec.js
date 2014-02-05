@@ -6,9 +6,19 @@ describe('service', function() {
   beforeEach(module('contactApp.services'));
 
 
-  describe('version', function() {
-    it('should return current version', inject(function(version) {
-      expect(version).toEqual('0.1');
+  describe('contact service', function() {
+    it('should have a service', inject(function(ContactService) {
+
+      expect(ContactService).not.toBe(undefined);
+
     }));
+
+      it('should have a Method get', inject(function(ContactService) {
+
+          expect(ContactService.get).not.toBe(undefined);
+
+
+      }));
+
   });
 });

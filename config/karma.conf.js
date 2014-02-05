@@ -3,11 +3,20 @@ module.exports = function(config){
     basePath : '../',
 
     files : [
+//        'node_modules/chai/chai.js',
+//        'node_modules/sinon/lib/sinon.js',
+//        'node_modules/sinon/lib/sinon/assert.js',
+//        'node_modules/sinon/lib/sinon/collection.js',
+//        'node_modules/sinon/lib/sinon/match.js',
+//        'node_modules/sinon/lib/sinon/spy.js',
+//        'node_modules/sinon/lib/sinon/stub.js',
+//        'node_modules/sinon-chai/lib/sinon-chai.js',
       'app/lib/angular/angular.js',
       'app/lib/angular/angular-*.js',
       'test/lib/angular/angular-mocks.js',
       'app/js/**/*.js',
-      'test/unit/**/*.js'
+      'test/unit/**/*.js',
+      'app/js/app.js'
     ],
 
     exclude : [
